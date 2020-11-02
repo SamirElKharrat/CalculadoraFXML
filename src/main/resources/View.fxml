@@ -7,10 +7,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<BorderPane fx:id="cabeceraBp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <GridPane fx:id="numerosGp" alignment="CENTER" prefHeight="253.0" prefWidth="585.0" BorderPane.alignment="CENTER">
+      <GridPane fx:id="numerosgp" alignment="CENTER" prefHeight="253.0" prefWidth="585.0" BorderPane.alignment="CENTER">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="117.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="120.0" />
@@ -25,28 +24,28 @@
           <RowConstraints maxHeight="108.0" minHeight="0.0" prefHeight="62.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="sieteBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="130.0" text="7" />
-            <Button fx:id="ochoBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="137.0" text="8" GridPane.columnIndex="1" />
-            <Button fx:id="nueveBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="127.0" text="9" GridPane.columnIndex="2" />
-            <Button fx:id="ceBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="190.0" text="CE" GridPane.columnIndex="3" />
-            <Button fx:id="cBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="168.0" text="C" GridPane.columnIndex="4" />
-            <Button fx:id="cuatroBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="128.0" text="4" GridPane.rowIndex="1" />
-            <Button fx:id="unoBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="117.0" text="1" GridPane.rowIndex="2" />
-            <Button fx:id="cincoBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="129.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="seisBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="133.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="multiplicarBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="192.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button fx:id="divisionBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="126.0" text="/" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button fx:id="dosBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="tresBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button fx:id="menosBt" lineSpacing="5.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Button lineSpacing="5.0" mnemonicParsing="false" prefHeight="103.0" prefWidth="237.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-            <Button lineSpacing="5.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="124.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button lineSpacing="5.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="152.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Button fx:id="igualBt" defaultButton="true" lineSpacing="5.0" mnemonicParsing="false" prefHeight="157.0" prefWidth="126.0" text="=" GridPane.columnIndex="4" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="80.0" prefWidth="130.0" text="7" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="81.0" prefWidth="137.0" text="8" GridPane.columnIndex="1" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="75.0" prefWidth="127.0" text="9" GridPane.columnIndex="2" />
+            <Button fx:id="cebt" lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionBorrarTodo" prefHeight="93.0" prefWidth="190.0" text="CE" GridPane.columnIndex="3" />
+            <Button fx:id="cbt" lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionBorrarTodo" prefHeight="93.0" prefWidth="168.0" text="C" GridPane.columnIndex="4" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="71.0" prefWidth="128.0" text="4" GridPane.rowIndex="1" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="60.0" prefWidth="117.0" text="1" GridPane.rowIndex="2" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="68.0" prefWidth="129.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="68.0" prefWidth="133.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionOperar" prefHeight="67.0" prefWidth="192.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionOperar" prefHeight="74.0" prefWidth="126.0" text="/" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="60.0" prefWidth="120.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="60.0" prefWidth="120.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionOperar" prefHeight="60.0" prefWidth="120.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="103.0" prefWidth="237.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Button fx:id="puntobt" lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionComa" prefHeight="105.0" prefWidth="124.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionOperar" prefHeight="79.0" prefWidth="152.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button defaultButton="true" lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionOperar" prefHeight="157.0" prefWidth="126.0" text="=" GridPane.columnIndex="4" GridPane.rowIndex="2" GridPane.rowSpan="2" />
          </children>
       </GridPane>
    </center>
    <top>
-      <TextField fx:id="solucionTf" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="591.0" text="0.0" BorderPane.alignment="CENTER" />
+      <TextField fx:id="soluciontf" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="591.0" BorderPane.alignment="CENTER" />
    </top>
 </BorderPane>
