@@ -9,7 +9,7 @@
 
 <BorderPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <GridPane fx:id="numerosgp" alignment="CENTER" prefHeight="253.0" prefWidth="585.0" BorderPane.alignment="CENTER">
+      <GridPane alignment="CENTER" prefHeight="253.0" prefWidth="585.0" BorderPane.alignment="CENTER">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="117.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="120.0" />
@@ -27,8 +27,8 @@
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="80.0" prefWidth="130.0" text="7" />
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="81.0" prefWidth="137.0" text="8" GridPane.columnIndex="1" />
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="75.0" prefWidth="127.0" text="9" GridPane.columnIndex="2" />
-            <Button fx:id="cebt" lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionBorrarTodo" prefHeight="93.0" prefWidth="190.0" text="CE" GridPane.columnIndex="3" />
-            <Button fx:id="cbt" lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionBorrarTodo" prefHeight="93.0" prefWidth="168.0" text="C" GridPane.columnIndex="4" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionBorrarTodo" prefHeight="93.0" prefWidth="190.0" text="CE" GridPane.columnIndex="3" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionBorrar" prefHeight="93.0" prefWidth="168.0" text="C" GridPane.columnIndex="4" />
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="71.0" prefWidth="128.0" text="4" GridPane.rowIndex="1" />
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="60.0" prefWidth="117.0" text="1" GridPane.rowIndex="2" />
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="68.0" prefWidth="129.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -39,13 +39,13 @@
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="60.0" prefWidth="120.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionOperar" prefHeight="60.0" prefWidth="120.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionInsertar" prefHeight="103.0" prefWidth="237.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
-            <Button fx:id="puntobt" lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionComa" prefHeight="105.0" prefWidth="124.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionComa" prefHeight="105.0" prefWidth="124.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <Button lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionOperar" prefHeight="79.0" prefWidth="152.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
             <Button defaultButton="true" lineSpacing="5.0" mnemonicParsing="false" onAction="#onActionOperar" prefHeight="157.0" prefWidth="126.0" text="=" GridPane.columnIndex="4" GridPane.rowIndex="2" GridPane.rowSpan="2" />
          </children>
       </GridPane>
    </center>
    <top>
-      <TextField fx:id="soluciontf" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="591.0" BorderPane.alignment="CENTER" />
+      <TextField fx:id="soluciontf" alignment="CENTER_RIGHT" onAction="#onActionOperar" prefHeight="45.0" prefWidth="591.0" BorderPane.alignment="CENTER" />
    </top>
 </BorderPane>

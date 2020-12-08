@@ -11,12 +11,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
+import javafx.util.converter.NumberStringConverter;
 
 public class CalculadoraController implements Initializable {
 	
-
 	private CalculadoraModel calculadora = new CalculadoraModel();
-	
 
 	@FXML
 	private BorderPane view;
@@ -30,9 +29,9 @@ public class CalculadoraController implements Initializable {
 		loader.load();
 	}
 
+	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		soluciontf.textProperty().bind(calculadora.pantallaProperty());
-		
 	}
 
 
@@ -53,7 +52,7 @@ public class CalculadoraController implements Initializable {
 	}
 	
 	@FXML
-	public void onActionInsertarComa(ActionEvent e) {
+	public void onActionComa(ActionEvent e) {
 		calculadora.insertarComa();
 	}
 	

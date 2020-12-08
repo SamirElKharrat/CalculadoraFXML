@@ -37,7 +37,7 @@ public class CalculadoraModel {
 	 */
 	public void borrarTodo() {
 		nuevoOperando = true;
-		this.pantalla.set("0.0");
+		pantalla.set("0.0");
 	}
 
 	/**
